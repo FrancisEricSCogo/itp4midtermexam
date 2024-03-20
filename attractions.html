@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antipolo City - Attractions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  header, footer {
+    background-color: #1a43bf;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: light;
+  }
+  header h1, header img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  nav {
+    background-color: #224c98;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #0077b6;
+  }
+  .container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex: 0 0 calc(33.33% - 40px); /* Adjust card width for PC */
+    margin-right: 20px; /* Add margin between cards for PC */
+  }
+  .card img {
+    width: 100%; /* Set width to 100% to ensure responsiveness */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the entire space of its container */
+    border-radius: 20px 20px 0 0; /* Apply border-radius to all corners except the bottom ones */
+  }
+  .card__content {
+    padding: 20px;
+  }
+  .card__title {
+    color: #1a43bf;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .card__description {
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  footer {
+    background-color: #1a43bf;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  /* Scroll to top button */
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  #scrollToTopBtn:hover {
+    background-color: #005691;
+  }
+  @media screen and (max-width: 1024px) {
+    .card {
+      flex: 0 0 calc(50% - 40px); /* Adjust card width for tablets */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(100% - 40px); /* Adjust card width for mobile */
+      margin-right: 0; /* Remove margin between cards for mobile */
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Antipolo City</h1>
+  <img src="Antipolo_logo.png" alt="Antipolo City Logo" style="height: 50px;">
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="attractions.html">Attractions</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h2 style="text-align: center; margin-top: 20px;">Things to Do in Antipolo City</h2> <!-- Added title -->
+
+<div class="container">
+  <div class="card">
+    <img src="hinulugang_taktak.jpg" alt="Hinulugang Taktak">
+    <div class="card__content">
+      <p class="card__title">Hinulugang Taktak</p>
+      <p class="card__description">Check Out The Famed Hinulugang Taktak. There are precious few waterfalls easily accessible to metro dwellers, and Hinulugang Taktak is one of them. In decades past, the 21-meter (69-foot) cascade was one of the most iconic attractions in Antipolo. While swimming is no longer permitted in the natural pool of Hinulugang Taktak, the renovated park remains a pleasant place to hang out and enjoy nature. Adventurous travelers can even indulge in the park’s more extreme sports facilities, including the spider web view deck, rock climbing wall, hanging bridge, and rappelling area.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="mystical_cave_antipolo.jpg" alt="Mystical Cave">
+    <div class="card__content">
+      <p class="card__title">Mystical Cave</p>
+      <p class="card__description">Not many people are aware that there is a small cave known as the Mystical Cave in Antipolo. Discovered by Inday Nelly in 1970, the cave is now a tourist-friendly spot with paved steps for easy access to the main cavern. Inside, the ground is smooth and level, making it easy for travelers to roam and explore. Go on a guided tour to admire and learn more about the magnificent stalactites and stalagmites in Mystical Cave.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Antipolo_Beehouse.jpg" alt="Burrow Café at Antipolo Beehouse">
+    <div class="card__content">
+      <p class="card__title">Treat Yourself To Lunch In A Beautiful Artsy Bistro</p>
+      <p class="card__description">After nearly a year indoors, people are looking for somewhere to eat surrounded by lush plant-scapes. Luckily, there are plenty of cute garden cafés in Antipolo to satisfy this urge. Crescent Moon Café & Studio Pottery offers an artsy secret garden setting for lunch, while Burrow Café at Antipolo Bee House is a hidden haven surrounded by the flourishing woods. Or you can visit Tahanan Bistro for amazing views of Antipolo’s greenery and Laguna de Bay. For breakfast, Yellow Bird Café is a bright, airy, and cheerful space that serves good food and coffee as early as 9 am.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Pinto_Art_Museum.jpg" alt="Pinto Art Museum">
+    <div class="card__content">
+      <p class="card__title">Admire Stunning Works Of Art In Pinto Art Museum</p>
+      <p class="card__description">Known for an impressive display of contemporary art, Pinto Art Museum is one of the most popular attractions in Antipolo. The impeccably landscaped grounds make it a pleasant and Instagram-worthy space on sunny mornings and afternoons, especially with views of Manila in the distance. Stroll through the lush property to admire the paintings, sculptures, and art installations by prominent Filipino artists. Anytime you have a few hours to spare, Pinto Art Museum is definitely worth a visit.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="PACEM_Eco_Park.jpg" alt="PACEM Eco Park">
+    <div class="card__content">
+      <p class="card__title">Enjoy Animal Encounters At PACEM Eco Park</p>
+      <p class="card__description">Take the kiddos (or kiddos at heart) to PACEM Eco Park for an hour or two making friends with cool animals. Located inside Assumption Antipolo, the verdant park was built to inspire the love of nature and wildlife among children and adults alike. Step inside the Butterfly Garden and stand still to let delicate butterflies land on your head, shoulder, or hand. The park also features a mini forest, herbal garden, and wildlife sanctuary with birds, rabbits, ducks, and more.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Gardens_Spa.jpg" alt="Luljetta’s Hanging Gardens Spa">
+    <div class="card__content">
+      <p class="card__title">Relax And Rejuvenate At Luljetta’s Hanging Gardens Spa</p>
+      <p class="card__description">When you’re stressed and in need of a day of pampering, take the time to visit Luljetta’s Hanging Gardens. With massages, soothing soaks, and relaxing views of nature, this beautiful spa up in the mountains will help ease your spirit and get you more ready for a busy work week ahead. Enjoy your treatment of choice in a private cottage overlooking the mountainside. Notable facilities include a sauna, heated jacuzzi, hydro-massage pool, and three infinity swimming pools.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Mount_Purro.jpg" alt="Mount Purro Nature Reserve">
+    <div class="card__content">
+      <p class="card__title">Bask In Nature At Mount Purro Nature Reserve</p>
+      <p class="card__description">Whether you’ve been dreaming of outdoor activities or just the blissful quiet of nature, a day at Mount Purro Nature Reserve will deliver the respite you need from the crowded city. Nestled at the foothills of the Sierra Madre, the resort provides a lush setting for serene nature walks by the river, treks to mountain peaks, and zipline thrills. Kids will appreciate being able to run and play outdoors in the expansive playground and swimming pool. Accommodations are available for guests who want to stay the night.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Mountain_Quest.jpg" alt="ATV Ride in Rizal">
+    <div class="card__content">
+      <p class="card__title">Explore The Rizal Wild On An ATV Ride</p>
+      <p class="card__description">If you’re ready for an exhilarating experience in (and beyond) Antipolo, an ATV ride through the wild may be up to your speed. Hop aboard an all-terrain vehicle for the drive of a lifetime through the largely unexplored mountains, forests, rivers, and waterfalls of Rizal. ATV Adventures Rizal offers a variety of half- and full-day tours throughout the province. You may also book an ATV tour to the majestic Wawa Dam in Rodriguez, Rizal here.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="telescope_antipolo.jpg" alt="Seven Suites Hotel Observatory">
+    <div class="card__content">
+      <p class="card__title">Gaze At The Stars</p>
+      <p class="card__description">Did you know that the fourth most powerful telescope in the country is in Antipolo? It’s housed in Seven Suites Hotel Observatory, a three-star hotel, observatory, and events venue in Antipolo. While it’s a pleasant stay at Seven Suites, the highlight is stargazing on the expansive roof deck, especially when there are clear skies and starry nights.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="antipolo_Home.jpg" alt="Antipolo Cathedral">
+    <div class="card__content">
+      <p class="card__title">Visit Antipolo Cathedral For Your Upcoming Travels</p>
+      <p class="card__description">Attracting millions of pilgrims every year, Antipolo Cathedral remains among the most popular destinations in Antipolo. It enshrines the 17th-century image of Our Lady of Peace and Good Voyage, which is frequented by devotees, travelers on their way to a long journey, and even new car owners. The beautiful cathedral is well-maintained and worth a visit, whether you’re in the city on Sundays for Mass or just a quick prayer in between tours.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  &copy; 2024 Antipolo City
+</footer>
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</body>
+</html>
